@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+historical_data/
+live_signals_log.json
+paper_trading_tracker.xlsx
+forward_validation_log.json
+*.csv
+.env
+.vscode/
+.metadata/
+.idea/
+.RemoteSystemsTempFiles/

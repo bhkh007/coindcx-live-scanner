@@ -1,0 +1,610 @@
+{
+  "config": {
+    "start_date": "2025-01-05",
+    "end_date": "2025-07-05",
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT",
+      "BNBUSDT",
+      "NEARUSDT"
+    ],
+    "timeframes": [
+      "5m",
+      "15m",
+      "1h",
+      "4h"
+    ],
+    "multiplier_versions": {
+      "extreme": {
+        "name": "Extreme Multiplier",
+        "multiplier_func": "extreme_multiplier"
+      },
+      "current": {
+        "name": "Current Multiplier",
+        "multiplier_func": "current_multiplier"
+      },
+      "soft": {
+        "name": "Soft Multiplier",
+        "multiplier_func": "soft_multiplier"
+      },
+      "linear": {
+        "name": "Linear Multiplier",
+        "multiplier_func": "linear_multiplier"
+      },
+      "none": {
+        "name": "No Multiplier",
+        "multiplier_func": "none_multiplier"
+      }
+    },
+    "signal_thresholds": {
+      "GOOD": 73,
+      "WATCHLIST": 50
+    },
+    "risk_per_trade": 0.005,
+    "max_concurrent_trades": 50,
+    "max_daily_trades": 100,
+    "effective_max_positions": 5,
+    "maker_fee": 0.0002,
+    "taker_fee": 0.0004,
+    "slippage_pct": 0.0005,
+    "reinvest_profits": true,
+    "compound_returns": true,
+    "initial_capital": 10000,
+    "debug_signals": false,
+    "risk_per_trade_live": 0.005,
+    "threshold_experiments": [
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "max_portfolio_heat": 0.1,
+    "min_mtf_score": 75,
+    "min_short_confluence": 70,
+    "in_sample_end_date": "2025-07-05",
+    "forward_end_date": "today",
+    "forward_min_days": 45,
+    "baseline": {
+      "sharpe": 2.07,
+      "expectancy": 0.217,
+      "win_rate": 34.8,
+      "source": "Walk-forward Window 3 (May-Jul 2025 test period)"
+    },
+    "exclude_75_79_band": true,
+    "min_oos_trades_for_deployment": 200,
+    "run_forward_validation": true,
+    "band_70_74_short_assessment": {
+      "min_trades_for_evaluation": 20,
+      "holding_exp_threshold": 0.3,
+      "degrading_exp_threshold": 0.1,
+      "note": "WR-based assessment removed - in-sample 59% WR was overfitted. OOS baseline established at 41.7% WR / 0.458R expectancy (96 trades)."
+    }
+  },
+  "results": {
+    "Current Multiplier": {
+      "version": "Current Multiplier",
+      "total_trades": 253,
+      "win_count": 90,
+      "loss_count": 163,
+      "win_rate": 35.57,
+      "avg_r": 0.245,
+      "median_r": -1.0,
+      "std_r": 1.676,
+      "avg_win_r": 2.5,
+      "avg_loss_r": 1.0,
+      "profit_factor": 1.38,
+      "expectancy": 0.245,
+      "net_return_r": 62.0,
+      "net_return_pct": 35.12,
+      "final_equity": 13511.86,
+      "max_drawdown_r": -26.0,
+      "max_drawdown_pct": -12.28,
+      "sharpe_ratio": 2.322,
+      "max_losing_streak": 17,
+      "best_trade": 2.5,
+      "worst_trade": -1.0,
+      "confluence_breakdown": {
+        "40-49": {
+          "count": 0
+        },
+        "50-59": {
+          "count": 1,
+          "win_rate": 100.0,
+          "expectancy": 2.5,
+          "profit_factor": 9.99,
+          "max_dd_r": 0.0,
+          "reliable": false
+        },
+        "60-69": {
+          "count": 27,
+          "win_rate": 40.74,
+          "expectancy": 0.426,
+          "profit_factor": 1.719,
+          "max_dd_r": -4.5,
+          "reliable": false
+        },
+        "70-79": {
+          "count": 168,
+          "win_rate": 34.52,
+          "expectancy": 0.208,
+          "profit_factor": 1.318,
+          "max_dd_r": -22.0,
+          "reliable": true
+        },
+        "80-89": {
+          "count": 57,
+          "win_rate": 35.09,
+          "expectancy": 0.228,
+          "profit_factor": 1.351,
+          "max_dd_r": -7.5,
+          "reliable": true
+        },
+        "90+": {
+          "count": 0
+        }
+      },
+      "confidence_breakdown": {
+        "50-54": {
+          "count": 0
+        },
+        "55-59": {
+          "count": 0
+        },
+        "60-64": {
+          "count": 0
+        },
+        "65-69": {
+          "count": 0
+        },
+        "70-74": {
+          "count": 95,
+          "win_rate": 37.89,
+          "expectancy": 0.326,
+          "profit_factor": 1.525,
+          "max_dd_r": -13.0,
+          "reliable": true,
+          "long_stats": {
+            "count": 48,
+            "win_rate": 31.2,
+            "expectancy": 0.094
+          },
+          "short_stats": {
+            "count": 47,
+            "win_rate": 44.7,
+            "expectancy": 0.564
+          }
+        },
+        "75-79": {
+          "count": 116,
+          "win_rate": 35.34,
+          "expectancy": 0.237,
+          "profit_factor": 1.367,
+          "max_dd_r": -12.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 108,
+            "win_rate": 33.3,
+            "expectancy": 0.167
+          },
+          "short_stats": {
+            "count": 8,
+            "win_rate": 62.5,
+            "expectancy": 1.188
+          }
+        },
+        "80+": {
+          "count": 42,
+          "win_rate": 30.95,
+          "expectancy": 0.083,
+          "profit_factor": 1.121,
+          "max_dd_r": -16.0,
+          "reliable": true,
+          "long_stats": {
+            "count": 42,
+            "win_rate": 31.0,
+            "expectancy": 0.083
+          },
+          "short_stats": null
+        }
+      }
+    },
+    "Soft Multiplier": {
+      "version": "Soft Multiplier",
+      "total_trades": 251,
+      "win_count": 97,
+      "loss_count": 154,
+      "win_rate": 38.65,
+      "avg_r": 0.353,
+      "median_r": -1.0,
+      "std_r": 1.704,
+      "avg_win_r": 2.5,
+      "avg_loss_r": 1.0,
+      "profit_factor": 1.575,
+      "expectancy": 0.353,
+      "net_return_r": 88.5,
+      "net_return_pct": 54.2,
+      "final_equity": 15419.58,
+      "max_drawdown_r": -17.0,
+      "max_drawdown_pct": -8.25,
+      "sharpe_ratio": 3.284,
+      "max_losing_streak": 16,
+      "best_trade": 2.5,
+      "worst_trade": -1.0,
+      "confluence_breakdown": {
+        "40-49": {
+          "count": 0
+        },
+        "50-59": {
+          "count": 5,
+          "win_rate": 60.0,
+          "expectancy": 1.1,
+          "profit_factor": 3.75,
+          "max_dd_r": -1.0,
+          "reliable": false
+        },
+        "60-69": {
+          "count": 42,
+          "win_rate": 40.48,
+          "expectancy": 0.417,
+          "profit_factor": 1.7,
+          "max_dd_r": -5.0,
+          "reliable": true
+        },
+        "70-79": {
+          "count": 157,
+          "win_rate": 39.49,
+          "expectancy": 0.382,
+          "profit_factor": 1.632,
+          "max_dd_r": -12.5,
+          "reliable": true
+        },
+        "80-89": {
+          "count": 46,
+          "win_rate": 32.61,
+          "expectancy": 0.141,
+          "profit_factor": 1.21,
+          "max_dd_r": -8.5,
+          "reliable": true
+        },
+        "90+": {
+          "count": 1,
+          "win_rate": 0.0,
+          "expectancy": -1.0,
+          "profit_factor": 0.0,
+          "max_dd_r": 0.0,
+          "reliable": false
+        }
+      },
+      "confidence_breakdown": {
+        "50-54": {
+          "count": 0
+        },
+        "55-59": {
+          "count": 0
+        },
+        "60-64": {
+          "count": 0
+        },
+        "65-69": {
+          "count": 0
+        },
+        "70-74": {
+          "count": 95,
+          "win_rate": 45.26,
+          "expectancy": 0.584,
+          "profit_factor": 2.067,
+          "max_dd_r": -7.0,
+          "reliable": true,
+          "long_stats": {
+            "count": 46,
+            "win_rate": 39.1,
+            "expectancy": 0.37
+          },
+          "short_stats": {
+            "count": 49,
+            "win_rate": 51.0,
+            "expectancy": 0.786
+          }
+        },
+        "75-79": {
+          "count": 112,
+          "win_rate": 35.71,
+          "expectancy": 0.25,
+          "profit_factor": 1.389,
+          "max_dd_r": -16.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 96,
+            "win_rate": 32.3,
+            "expectancy": 0.13
+          },
+          "short_stats": {
+            "count": 16,
+            "win_rate": 56.2,
+            "expectancy": 0.969
+          }
+        },
+        "80+": {
+          "count": 44,
+          "win_rate": 31.82,
+          "expectancy": 0.114,
+          "profit_factor": 1.167,
+          "max_dd_r": -15.0,
+          "reliable": true,
+          "long_stats": {
+            "count": 44,
+            "win_rate": 31.8,
+            "expectancy": 0.114
+          },
+          "short_stats": null
+        }
+      }
+    },
+    "Linear Multiplier": {
+      "version": "Linear Multiplier",
+      "total_trades": 207,
+      "win_count": 65,
+      "loss_count": 142,
+      "win_rate": 31.4,
+      "avg_r": 0.099,
+      "median_r": -1.0,
+      "std_r": 1.624,
+      "avg_win_r": 2.5,
+      "avg_loss_r": 1.0,
+      "profit_factor": 1.144,
+      "expectancy": 0.099,
+      "net_return_r": 20.5,
+      "net_return_pct": 10.04,
+      "final_equity": 11004.1,
+      "max_drawdown_r": -38.5,
+      "max_drawdown_pct": -17.68,
+      "sharpe_ratio": 0.968,
+      "max_losing_streak": 17,
+      "best_trade": 2.5,
+      "worst_trade": -1.0,
+      "confluence_breakdown": {
+        "40-49": {
+          "count": 0
+        },
+        "50-59": {
+          "count": 3,
+          "win_rate": 33.33,
+          "expectancy": 0.167,
+          "profit_factor": 1.25,
+          "max_dd_r": -1.0,
+          "reliable": false
+        },
+        "60-69": {
+          "count": 18,
+          "win_rate": 27.78,
+          "expectancy": -0.028,
+          "profit_factor": 0.962,
+          "max_dd_r": -7.0,
+          "reliable": false
+        },
+        "70-79": {
+          "count": 101,
+          "win_rate": 30.69,
+          "expectancy": 0.074,
+          "profit_factor": 1.107,
+          "max_dd_r": -24.0,
+          "reliable": true
+        },
+        "80-89": {
+          "count": 85,
+          "win_rate": 32.94,
+          "expectancy": 0.153,
+          "profit_factor": 1.228,
+          "max_dd_r": -13.5,
+          "reliable": true
+        },
+        "90+": {
+          "count": 0
+        }
+      },
+      "confidence_breakdown": {
+        "50-54": {
+          "count": 0
+        },
+        "55-59": {
+          "count": 0
+        },
+        "60-64": {
+          "count": 0
+        },
+        "65-69": {
+          "count": 0
+        },
+        "70-74": {
+          "count": 85,
+          "win_rate": 25.88,
+          "expectancy": -0.094,
+          "profit_factor": 0.873,
+          "max_dd_r": -18.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 83,
+            "win_rate": 25.3,
+            "expectancy": -0.114
+          },
+          "short_stats": {
+            "count": 2,
+            "win_rate": 50.0,
+            "expectancy": 0.75
+          }
+        },
+        "75-79": {
+          "count": 107,
+          "win_rate": 36.45,
+          "expectancy": 0.276,
+          "profit_factor": 1.434,
+          "max_dd_r": -19.0,
+          "reliable": true,
+          "long_stats": {
+            "count": 107,
+            "win_rate": 36.4,
+            "expectancy": 0.276
+          },
+          "short_stats": null
+        },
+        "80+": {
+          "count": 15,
+          "win_rate": 26.67,
+          "expectancy": -0.067,
+          "profit_factor": 0.909,
+          "max_dd_r": -5.0,
+          "reliable": false,
+          "long_stats": {
+            "count": 15,
+            "win_rate": 26.7,
+            "expectancy": -0.067
+          },
+          "short_stats": null
+        }
+      }
+    },
+    "No Multiplier": {
+      "version": "No Multiplier",
+      "total_trades": 267,
+      "win_count": 104,
+      "loss_count": 163,
+      "win_rate": 38.95,
+      "avg_r": 0.363,
+      "median_r": -1.0,
+      "std_r": 1.707,
+      "avg_win_r": 2.5,
+      "avg_loss_r": 1.0,
+      "profit_factor": 1.595,
+      "expectancy": 0.363,
+      "net_return_r": 97.0,
+      "net_return_pct": 60.78,
+      "final_equity": 16078.5,
+      "max_drawdown_r": -18.0,
+      "max_drawdown_pct": -8.63,
+      "sharpe_ratio": 3.379,
+      "max_losing_streak": 18,
+      "best_trade": 2.5,
+      "worst_trade": -1.0,
+      "confluence_breakdown": {
+        "40-49": {
+          "count": 1,
+          "win_rate": 0.0,
+          "expectancy": -1.0,
+          "profit_factor": 0.0,
+          "max_dd_r": 0.0,
+          "reliable": false
+        },
+        "50-59": {
+          "count": 9,
+          "win_rate": 44.44,
+          "expectancy": 0.556,
+          "profit_factor": 2.0,
+          "max_dd_r": -3.0,
+          "reliable": false
+        },
+        "60-69": {
+          "count": 64,
+          "win_rate": 37.5,
+          "expectancy": 0.312,
+          "profit_factor": 1.5,
+          "max_dd_r": -8.0,
+          "reliable": true
+        },
+        "70-79": {
+          "count": 152,
+          "win_rate": 42.11,
+          "expectancy": 0.474,
+          "profit_factor": 1.818,
+          "max_dd_r": -13.5,
+          "reliable": true
+        },
+        "80-89": {
+          "count": 40,
+          "win_rate": 30.0,
+          "expectancy": 0.05,
+          "profit_factor": 1.071,
+          "max_dd_r": -10.0,
+          "reliable": true
+        },
+        "90+": {
+          "count": 1,
+          "win_rate": 0.0,
+          "expectancy": -1.0,
+          "profit_factor": 0.0,
+          "max_dd_r": 0.0,
+          "reliable": false
+        }
+      },
+      "confidence_breakdown": {
+        "50-54": {
+          "count": 0
+        },
+        "55-59": {
+          "count": 0
+        },
+        "60-64": {
+          "count": 0
+        },
+        "65-69": {
+          "count": 0
+        },
+        "70-74": {
+          "count": 84,
+          "win_rate": 42.86,
+          "expectancy": 0.5,
+          "profit_factor": 1.875,
+          "max_dd_r": -7.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 45,
+            "win_rate": 28.9,
+            "expectancy": 0.011
+          },
+          "short_stats": {
+            "count": 39,
+            "win_rate": 59.0,
+            "expectancy": 1.064
+          }
+        },
+        "75-79": {
+          "count": 137,
+          "win_rate": 36.5,
+          "expectancy": 0.277,
+          "profit_factor": 1.437,
+          "max_dd_r": -14.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 107,
+            "win_rate": 34.6,
+            "expectancy": 0.21
+          },
+          "short_stats": {
+            "count": 30,
+            "win_rate": 43.3,
+            "expectancy": 0.517
+          }
+        },
+        "80+": {
+          "count": 46,
+          "win_rate": 39.13,
+          "expectancy": 0.37,
+          "profit_factor": 1.607,
+          "max_dd_r": -11.5,
+          "reliable": true,
+          "long_stats": {
+            "count": 46,
+            "win_rate": 39.1,
+            "expectancy": 0.37
+          },
+          "short_stats": null
+        }
+      }
+    }
+  },
+  "timestamp": "2026-06-20T14:22:42.083840"
+}

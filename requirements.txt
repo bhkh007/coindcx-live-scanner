@@ -1,0 +1,25 @@
+delta-rest-client
+scipy
+matplotlib
+seaborn
+jupyter
+fastapi==0.95.2
+uvicorn==0.22.0
+websockets==11.0.3
+python-multipart==0.0.19
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+plotly>=5.0.0
+pandas-ta
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+mysql-connector-python==8.2.0
+pytz>=2023.3
+aiohttp>=3.8.0
+python-socketio[client]>=5.9.0
+websocket-client>=1.5.0
+pip freeze > requirements.txt
+openpyxl
+schedule

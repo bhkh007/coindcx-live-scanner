@@ -1,0 +1,98 @@
+[
+  {
+    "symbol": "ETHUSDT",
+    "confidence": 65.0,
+    "signal": "GOOD",
+    "confluence_pct": 64.1,
+    "base_score": 72.0,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "ETHUSDT",
+    "confidence": 68.4,
+    "signal": "GOOD",
+    "confluence_pct": 64.5,
+    "base_score": 72.0,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "ETHUSDT",
+    "confidence": 65.0,
+    "signal": "WATCHLIST",
+    "confluence_pct": 62.5,
+    "base_score": 72.0,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "ETHUSDT",
+    "confidence": 59.2,
+    "signal": "WATCHLIST",
+    "confluence_pct": 60.0,
+    "base_score": 65.8,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "BTCUSDT",
+    "confidence": 66.7,
+    "signal": "GOOD",
+    "confluence_pct": 65.0,
+    "base_score": 69.5,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "BTCUSDT",
+    "confidence": 66.0,
+    "signal": "GOOD",
+    "confluence_pct": 65.0,
+    "base_score": 69.5,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "BTCUSDT",
+    "confidence": 62.7,
+    "signal": "GOOD",
+    "confluence_pct": 64.0,
+    "base_score": 69.5,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "BTCUSDT",
+    "confidence": 59.4,
+    "signal": "WATCHLIST",
+    "confluence_pct": 62.0,
+    "base_score": 65.8,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "BTCUSDT",
+    "confidence": 58.1,
+    "signal": "WATCHLIST",
+    "confluence_pct": 62.0,
+    "base_score": 64.5,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "NEARUSDT",
+    "confidence": 55.0,
+    "signal": "IGNORE",
+    "confluence_pct": 42.5,
+    "base_score": 63.35,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "NEARUSDT",
+    "confidence": 54.8,
+    "signal": "IGNORE",
+    "confluence_pct": 42.0,
+    "base_score": 63.35,
+    "timestamp": 1780814624.277064
+  },
+  {
+    "symbol": "NEARUSDT",
+    "confidence": 54.4,
+    "signal": "WATCHLIST",
+    "confluence_pct": 50.0,
+    "base_score": 63.35,
+    "timestamp": 1780814624.277064
+  }
+]

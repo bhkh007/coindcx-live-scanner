@@ -1,0 +1,80 @@
+{
+  "signals": {
+    "ETHUSDT": {
+      "signal": "WATCHLIST",
+      "confidence": 70.4,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1781113399.8093212
+    },
+    "BTCUSDT": {
+      "signal": "GOOD",
+      "confidence": 65.1,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1781024660.0575602
+    },
+    "RENDERUSDT": {
+      "signal": "IGNORE",
+      "confidence": 55,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1780515578.1448689
+    },
+    "BNBUSDT": {
+      "signal": "IGNORE",
+      "confidence": 49.1,
+      "regime": "REVERSAL_POTENTIAL",
+      "timestamp": 1780767778.5557687
+    },
+    "DASHUSDT": {
+      "signal": "WATCHLIST",
+      "confidence": 64.1,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1780673754.6717327
+    },
+    "ZECUSDT": {
+      "signal": "IGNORE",
+      "confidence": 55,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1781805496.6557515
+    },
+    "SUIUSDT": {
+      "signal": "WATCHLIST",
+      "confidence": 60.3,
+      "regime": "TRENDING_BEARISH",
+      "timestamp": 1781545060.6341527
+    },
+    "WLDUSDT": {
+      "signal": "IGNORE",
+      "confidence": 54.4,
+      "regime": "REVERSAL_POTENTIAL",
+      "timestamp": 1781805643.4994926
+    },
+    "XRPUSDT": {
+      "signal": "WATCHLIST",
+      "confidence": 55.2,
+      "regime": "TRENDING_BULLISH",
+      "timestamp": 1781630597.1280174
+    }
+  },
+  "confluence": {
+    "ETHUSDT": 50.9580096,
+    "NEARUSDT": 33.898827008,
+    "BTCUSDT": 65.0,
+    "SUIUSDT": 10.87301876221925,
+    "JTOUSDT": 3.929472,
+    "FILUSDT": 15.68,
+    "RENDERUSDT": 45.0,
+    "BNBUSDT": 24.72,
+    "XRPUSDT": 22.599973704360078,
+    "AAVEUSDT": 11.402379687989084,
+    "SOLUSDT": 12.8509537558528,
+    "UNIUSDT": 3.028757889024,
+    "LINKUSDT": 15.13262707635511,
+    "DASHUSDT": 33.22073088,
+    "ZECUSDT": 25.40790253568,
+    "DEXEUSDT": 15.0,
+    "WLDUSDT": 49.704,
+    "INJUSDT": 25.0,
+    "ORDIUSDT": 14.16
+  },
+  "last_updated": 1782041415.610005
+}

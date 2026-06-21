@@ -1,0 +1,326 @@
+{
+  "run_date": "2026-06-20",
+  "forward_start": "2025-07-06",
+  "forward_end": "2026-06-20",
+  "forward_days": 349,
+  "total_signals": 3248,
+  "gated_signals": 1300,
+  "n_75_79_removed": 1948,
+  "baseline_metrics": {
+    "version": "OOS_Baseline",
+    "total_trades": 575,
+    "win_count": 200,
+    "loss_count": 375,
+    "win_rate": 34.78,
+    "avg_r": 0.217,
+    "median_r": -1.0,
+    "std_r": 1.667,
+    "avg_win_r": 2.5,
+    "avg_loss_r": 1.0,
+    "profit_factor": 1.333,
+    "expectancy": 0.217,
+    "net_return_r": 125.0,
+    "net_return_pct": 83.09,
+    "final_equity": 18308.87,
+    "max_drawdown_r": -29.5,
+    "max_drawdown_pct": -13.81,
+    "sharpe_ratio": 2.07,
+    "max_losing_streak": 19,
+    "best_trade": 2.5,
+    "worst_trade": -1.0,
+    "confluence_breakdown": {
+      "40-49": {
+        "count": 1,
+        "win_rate": 100.0,
+        "expectancy": 2.5,
+        "profit_factor": 9.99,
+        "max_dd_r": 0.0,
+        "reliable": false
+      },
+      "50-59": {
+        "count": 15,
+        "win_rate": 13.33,
+        "expectancy": -0.533,
+        "profit_factor": 0.385,
+        "max_dd_r": -12.0,
+        "reliable": false
+      },
+      "60-69": {
+        "count": 157,
+        "win_rate": 35.67,
+        "expectancy": 0.248,
+        "profit_factor": 1.386,
+        "max_dd_r": -15.0,
+        "reliable": true
+      },
+      "70-79": {
+        "count": 324,
+        "win_rate": 36.11,
+        "expectancy": 0.264,
+        "profit_factor": 1.413,
+        "max_dd_r": -18.5,
+        "reliable": true
+      },
+      "80-89": {
+        "count": 77,
+        "win_rate": 31.17,
+        "expectancy": 0.091,
+        "profit_factor": 1.132,
+        "max_dd_r": -16.5,
+        "reliable": true
+      },
+      "90+": {
+        "count": 1,
+        "win_rate": 0.0,
+        "expectancy": -1.0,
+        "profit_factor": 0.0,
+        "max_dd_r": 0.0,
+        "reliable": false
+      }
+    },
+    "confidence_breakdown": {
+      "50-54": {
+        "count": 0
+      },
+      "55-59": {
+        "count": 0
+      },
+      "60-64": {
+        "count": 0
+      },
+      "65-69": {
+        "count": 0
+      },
+      "70-74": {
+        "count": 184,
+        "win_rate": 38.04,
+        "expectancy": 0.332,
+        "profit_factor": 1.535,
+        "max_dd_r": -11.5,
+        "reliable": true,
+        "long_stats": {
+          "count": 88,
+          "win_rate": 34.1,
+          "expectancy": 0.193
+        },
+        "short_stats": {
+          "count": 96,
+          "win_rate": 41.7,
+          "expectancy": 0.458
+        }
+      },
+      "75-79": {
+        "count": 302,
+        "win_rate": 33.77,
+        "expectancy": 0.182,
+        "profit_factor": 1.275,
+        "max_dd_r": -25.0,
+        "reliable": true,
+        "long_stats": {
+          "count": 230,
+          "win_rate": 33.9,
+          "expectancy": 0.187
+        },
+        "short_stats": {
+          "count": 72,
+          "win_rate": 33.3,
+          "expectancy": 0.167
+        }
+      },
+      "80+": {
+        "count": 89,
+        "win_rate": 31.46,
+        "expectancy": 0.101,
+        "profit_factor": 1.148,
+        "max_dd_r": -20.5,
+        "reliable": true,
+        "long_stats": {
+          "count": 89,
+          "win_rate": 31.5,
+          "expectancy": 0.101
+        },
+        "short_stats": null
+      }
+    }
+  },
+  "gated_metrics": {
+    "version": "OOS_Gated",
+    "total_trades": 505,
+    "win_count": 185,
+    "loss_count": 320,
+    "win_rate": 36.63,
+    "avg_r": 0.282,
+    "median_r": -1.0,
+    "std_r": 1.686,
+    "avg_win_r": 2.5,
+    "avg_loss_r": 1.0,
+    "profit_factor": 1.445,
+    "expectancy": 0.282,
+    "net_return_r": 142.5,
+    "net_return_pct": 100.2,
+    "final_equity": 20020.12,
+    "max_drawdown_r": -38.0,
+    "max_drawdown_pct": -17.47,
+    "sharpe_ratio": 2.656,
+    "max_losing_streak": 20,
+    "best_trade": 2.5,
+    "worst_trade": -1.0,
+    "confluence_breakdown": {
+      "40-49": {
+        "count": 6,
+        "win_rate": 66.67,
+        "expectancy": 1.333,
+        "profit_factor": 5.0,
+        "max_dd_r": -1.0,
+        "reliable": false
+      },
+      "50-59": {
+        "count": 31,
+        "win_rate": 29.03,
+        "expectancy": 0.016,
+        "profit_factor": 1.023,
+        "max_dd_r": -12.0,
+        "reliable": true
+      },
+      "60-69": {
+        "count": 230,
+        "win_rate": 39.13,
+        "expectancy": 0.37,
+        "profit_factor": 1.607,
+        "max_dd_r": -22.0,
+        "reliable": true
+      },
+      "70-79": {
+        "count": 179,
+        "win_rate": 35.75,
+        "expectancy": 0.251,
+        "profit_factor": 1.391,
+        "max_dd_r": -11.0,
+        "reliable": true
+      },
+      "80-89": {
+        "count": 57,
+        "win_rate": 31.58,
+        "expectancy": 0.105,
+        "profit_factor": 1.154,
+        "max_dd_r": -16.5,
+        "reliable": true
+      },
+      "90+": {
+        "count": 2,
+        "win_rate": 0.0,
+        "expectancy": -1.0,
+        "profit_factor": 0.0,
+        "max_dd_r": -1.0,
+        "reliable": false
+      }
+    },
+    "confidence_breakdown": {
+      "50-54": {
+        "count": 0
+      },
+      "55-59": {
+        "count": 0
+      },
+      "60-64": {
+        "count": 0
+      },
+      "65-69": {
+        "count": 0
+      },
+      "70-74": {
+        "count": 351,
+        "win_rate": 37.89,
+        "expectancy": 0.326,
+        "profit_factor": 1.525,
+        "max_dd_r": -25.0,
+        "reliable": true,
+        "long_stats": {
+          "count": 242,
+          "win_rate": 37.6,
+          "expectancy": 0.316
+        },
+        "short_stats": {
+          "count": 109,
+          "win_rate": 38.5,
+          "expectancy": 0.349
+        }
+      },
+      "75-79": {
+        "count": 0
+      },
+      "80+": {
+        "count": 154,
+        "win_rate": 33.77,
+        "expectancy": 0.182,
+        "profit_factor": 1.275,
+        "max_dd_r": -24.0,
+        "reliable": true,
+        "long_stats": {
+          "count": 154,
+          "win_rate": 33.8,
+          "expectancy": 0.182
+        },
+        "short_stats": null
+      }
+    }
+  },
+  "direction_baseline": {
+    "long_count": 407,
+    "short_count": 168,
+    "long_wr": 33.4,
+    "short_wr": 38.1,
+    "long_exp": 0.17,
+    "short_exp": 0.333,
+    "band_70_74_short_count": 96,
+    "band_70_74_short_wr": 41.7,
+    "band_70_74_short_exp": 0.458,
+    "band_70_74_long_count": 88,
+    "band_70_74_long_wr": 34.1,
+    "band_70_74_long_exp": 0.193,
+    "band_75_79_count": 302,
+    "band_75_79_wr": 33.8,
+    "band_75_79_exp": 0.182
+  },
+  "direction_gated": {
+    "long_count": 396,
+    "short_count": 109,
+    "long_wr": 36.1,
+    "short_wr": 38.5,
+    "long_exp": 0.264,
+    "short_exp": 0.349,
+    "band_70_74_short_count": 109,
+    "band_70_74_short_wr": 38.5,
+    "band_70_74_short_exp": 0.349,
+    "band_70_74_long_count": 242,
+    "band_70_74_long_wr": 37.6,
+    "band_70_74_long_exp": 0.316,
+    "band_75_79_count": 0,
+    "band_75_79_wr": 0.0,
+    "band_75_79_exp": 0.0
+  },
+  "baseline_comparison": {
+    "sharpe_delta": 0.0,
+    "exp_delta": 0.0,
+    "wr_delta": -0.0,
+    "sharpe_pass": true,
+    "exp_pass": true,
+    "wr_pass": true,
+    "sharpe_floor": 1.242,
+    "exp_floor": 0.13,
+    "wr_floor": 24.8
+  },
+  "gated_comparison": {
+    "sharpe_delta": 0.586,
+    "exp_delta": 0.065,
+    "wr_delta": 1.8,
+    "sharpe_pass": true,
+    "exp_pass": true,
+    "wr_pass": true,
+    "sharpe_floor": 1.242,
+    "exp_floor": 0.13,
+    "wr_floor": 24.8
+  },
+  "total_oos_trades": 575,
+  "verdict": "READY"
+}
