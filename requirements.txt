@@ -20,6 +20,5 @@ pytz>=2023.3
 aiohttp>=3.8.0
 python-socketio[client]>=5.9.0
 websocket-client>=1.5.0
-pip freeze > requirements.txt
 openpyxl
 schedule
