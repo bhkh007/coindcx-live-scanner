@@ -761,10 +761,10 @@ def main():
 
     # Option: run once immediately for testing, then start the loop
     # Uncomment the line below to run a single scan cycle right now
-    scanner.run_once(pd.Timestamp.now(tz="UTC"))
+    #scanner.run_once(pd.Timestamp.now(tz="UTC"))
 
     # Run indefinitely on schedule
-    #scanner.run_forever()
+    scanner.run_forever()
 
 
 if __name__ == "__main__":
